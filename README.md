@@ -2,58 +2,49 @@
 
 ## Lehrziel
 
-- Verwenden von Java-Entity-Klassen 
-- Konstruktoren (Standard-Konstruktor, Konstruktoren mit Parameter)
-- Anwende der grafischen Bibliothek Processing
+- Verwenden einer Java-Entity-Klasse mit Processing 
 
 ## Ausgangssituation
 
-In der letzten Übung wurde ein Programm erstellt, mit dem sich der Roboter auf einem Feld bewegen kann. Problem dabei ist, 
-
-- daß der Roboter auch das Feld verlassen kann und
-- seine "Blickrichtung" nicht ersichtlich ist
+In der letzten Übung wurde ein Roboter modelliert.
 
 
 ## Aufgabenstellung
 
-Erweitern Sie nun das Programm und erstellen Sie zwei Modi:
+Diserer von uns in der letzten Übung modellierte Roboter wird nun grafisch dargestellt:
 
-1. Der Roboter kann das Feld nicht verlassen
-2. Der Roboter verläßt das Feld und erscheint auf der anderen Seite
+<img src="./images/start_screen.png" width="500" />
 
-Zwischen den beiden Modi kann mittels der Taste M gewechselt werden. Die beiden Modi lauten RESTRICT und TELEPORT.
-
-Die Blickrichtung soll entsprechend dem aktuell eingestellten Modus und der Bewegungsrichtung dargestellt werden.
-
-<p float="left">
-	<img src="./images/R-unten.png">
-	<img src="./images/R-rechts.png">
-	<img src="./images/R-oben.png">
-	<img src="./images/R-links.png">
-</p>
-
-<p float="left">
-	<img src="./images/T-unten.png">
-	<img src="./images/T-rechts.png">
-	<img src="./images/T-oben.png">
-	<img src="./images/T-links.png">
-</p>
-
-Die neue grafische Darstellung des Roboter sieht wie folgt aus:
-
-<img src="./images/board.png" width="500" />
-
-Mit den Tasten <F> und  <L> kann unser Roboter gesteuert werden.
+Mit den Tasten <F> und  <L> kann unser Roboter gesteuert werden
 
 Taste | Funktion | Beschreibung
 --- | --- | ---
 F | Forward | einen Schritt vorwärts
 L | Left | nach links um 90° drehen 
-M | alter mode | Der Modus wechselt zwischen RESTRICT und TELEPORT
 
+Hier sieht man den Roboter nach ein paar "Schritten":
 
-## Erweiterung
+<img src="./images/action_screen.png" width="500" />
 
-Erstellen Sie einen zweiten andersfarbigen Roboter, der durch die Tasten 4 (statt F) und 6 (statt L) gelenkt werden kann.
+## Erweiterungen
+
+### Skalierung des Spielfeldes
+
+Durch die Einstellung eines Parameters kann das Spielfeld stufenlos skaliert werden.
+
+<img src="./images/small_board.png" width="500" />
+
+### Skalierung der Überschrift
+
+Wird der obere Rand in seiner Größe geändert, passt sich die Größe der Überschrift an.
+
+<img src="./images/small_header.png" width="500" />
+
+### Begrenzung des Boards
+
+Derzeit ist es mit unserer Robot-Klasse möglich, das Board zu verlassen und auf dem ganzen Screen umherzuwandern. 
+
+Überlegen Sie sich, was zu tun wäre, um das zu verhindern.
+
 
 *** Viel Spaß ***
